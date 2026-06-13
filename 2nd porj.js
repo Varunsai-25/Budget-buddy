@@ -10,7 +10,10 @@ function addtran(){
     let desc=
     document.getElementById("desc").value;
     let amount=
-    Math.abs(Number(document.getElementById("amount").value));
+    Number(document.getElementById("amount").value);
+    if(amount<=0){
+        alert("⚠️ Amount must be a postive number");
+        return;}
     let type=
     document.getElementById("type").value;
     let now = new Date();
