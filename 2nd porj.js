@@ -10,7 +10,7 @@ function addtran(){
     let desc=
     document.getElementById("desc").value;
     let amount=
-    Number(document.getElementById("amount").value);
+    math.abs(Number(document.getElementById("amount").value));
     let type=
     document.getElementById("type").value;
     let now = new Date();
