@@ -70,13 +70,20 @@ transactions.forEach(function(t) {
     
 );
 function clearData(){
-    localStorage.clear();
-    income=0;
+    let confirmdelete =confirm("are you sure you want to delete all data");
+    if(confirmdelete){
+            localStorage.clear();
+            income=0;
     expense=0;
     transaction =[];
     document.getElementById("income").innerText="₹0";
     document.getElementById("expense").innerText="₹0";
     document.getElementById("balance").innerText="₹0";
     document.getElementById("transaction-list").innerHTML="";
+    alert("✅ all  data of your's is cleared ");
+
+    }
+
+    
 
 }
